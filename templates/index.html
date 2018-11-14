@@ -1,0 +1,20 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Reddit API</title>
+        <link href="" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div>
+            <h2>Here are the titles of the top ten posts for the {{subreddit}} subreddit</h2>
+            <ul id = "topten">
+            {% for post in posts %}
+                <li>post.title</li>    
+            {% endfor %}
+            </ul>
+        </div>
+
+
+    </body>
+</html>
