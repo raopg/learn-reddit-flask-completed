@@ -3,7 +3,12 @@
         <meta charset="UTF-8">
         <title>Reddit API</title>
         <link href="" rel="stylesheet">
+        <!-- Link to fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <!-- Link to CSS-->
+        <link href="../static/css/index.css" rel="stylesheet">
     </head>
+<<<<<<< HEAD
     <body>
         
         <div>
@@ -15,6 +20,20 @@
             </ul>
         </div>
 
+=======
+>>>>>>> 252ca1a8570ede5e551123d2398418aca58b2333
 
+    <body> 
+        <h1 id="top-posts-title">Top 10 posts for the {{subreddit}} subreddit</h1>
+        <div id="top-posts">
+            {% if posts %}
+                {% for post in posts %}
+                    <div class="post">
+                        <img class="post-img" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/ESC_large_ISS022_ISS022-E-11387-edit_01.JPG" />
+                        <h2 class="post-title"> {{post.title}} </h2>
+                    </div>  
+                {% endfor %}
+            {% endif %}
+        </div>
     </body>
 </html>
