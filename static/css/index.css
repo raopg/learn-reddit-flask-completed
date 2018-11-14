@@ -1,0 +1,46 @@
+body,html{
+    background:#e9ebee;
+    font-family:'Montserrat';
+}
+
+#top-posts-title{
+    margin:1em;
+    text-align:center;
+}
+
+#top-posts{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.post{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    width:80%;
+    height:10em;
+    max-height:10em;
+    margin:0.5em 1em;
+    padding:0.5em 1em;
+    border:0.5px gray solid;
+    border-radius:0.2em;
+    box-shadow:2px 2px 0.5px 0.5px gray;
+    background:#fff;
+    opacity:0.8;
+}
+
+.post:hover{
+    opacity:1.0;
+    background:#DFDFDF;
+    box-shadow:none;
+}
+
+.post-title{
+    height:100%;
+    margin-left:1em;
+}
+
+.post-img{
+    height:100%;
+}
