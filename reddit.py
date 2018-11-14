@@ -33,11 +33,7 @@ def ten_top_titles(reddit_instance, subreddit):
     '''This function takes a subreddit name as a string and prints out the ten latest posts 
     under the hot category'''
     subreddit_instance  = reddit_instance.subreddit(subreddit)
-    ten_hot = subreddit_instance.top(limit=10)
-    for post in ten_hot:
-        print(post.title)
-
-    return ten_hot
+    return subreddit_instance.top(limit=10)
 
 if __name__ == '__main__':
     reddit_instance = create_reddit_instance(read_only = False)
